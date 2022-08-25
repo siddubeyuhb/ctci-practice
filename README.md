@@ -1,2 +1,2 @@
 Solutions to the questions of 
-**Chapter 1: Arrays and Strings**
+**Cracking The Coding Interview (6th Ed)**
