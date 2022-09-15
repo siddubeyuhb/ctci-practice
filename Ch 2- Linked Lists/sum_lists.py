@@ -8,7 +8,7 @@ import linkedlist
 def sum_reverse(ll1, ll2):
     carry = 0
     sum_ll = None
-
+    new_head = None
     while(ll1 or ll2):
         value_sum = carry
 
@@ -24,6 +24,7 @@ def sum_reverse(ll1, ll2):
 
         if sum_ll is None:
             sum_ll = new_node
+            new_head = sum_ll
         else:
             sum_ll.next = new_node
             sum_ll = sum_ll.next
@@ -31,4 +32,4 @@ def sum_reverse(ll1, ll2):
     if(carry > 0):
         sum_ll.next = Node(carry)
 
-    return sum_ll
+    return new_head
